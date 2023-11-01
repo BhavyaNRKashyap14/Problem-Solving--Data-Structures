@@ -1,0 +1,68 @@
+Description
+Print right-angled triangle pattern using integers. See example for more details.
+
+Prohibited Keywords
+No prohibited keywords for this problem.
+Input Format
+First line of input contains T - number of test cases. Its followed by T lines, each contains a single number N. Print a newline after each testcase
+
+Output Format
+For the given integer, print the right-angled triangle pattern.
+
+Constraints
+1<= T <= 50
+
+1<= N <= 100
+
+Example
+Input 1
+2
+4
+5
+ 
+Output 1
+1
+2 3
+4 5 6
+7 8 9 10
+
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+
+
+---------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    
+    while(t--)
+    {
+        int value;
+        cin>>value;
+        int curr_num =1;
+        
+        for(int i =1;i<=value;i++)
+        {
+            for(int j =1;j<=i;j++)
+            {
+                cout<<curr_num<<" ";
+                curr_num++;
+            }
+            cout<<endl;
+        }
+        cout<<endl;
+    }
+   // write your code here
+    return 0;
+}
+
+------------------------------------------------------------------------
+
+ 
