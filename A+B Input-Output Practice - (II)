@@ -1,0 +1,59 @@
+Description
+Your task is to Calculate A + B.
+
+Prohibited Keywords
+No prohibited keywords for this problem.
+Input Format
+Input contains an integer T in the first line, representing number of test cases, and then T lines follow. Each line consists of a pair of integers a and b, separated by a space, one pair of integers per line.
+
+Output Format
+For each pair of input integers a and b you should output the sum of a and b in one line, and with one line of output for each line in input.
+
+Constraints
+1 <= T <= 100
+
+-1000 <= A, B <= 1000
+
+Example
+Input 1
+3
+10 43
+-12 54
+29 67
+ 
+Output 1
+53
+42
+96
+ 
+Explanation 1
+Self Explanatory
+
+ 
+Note
+1 <= T <= 100
+-------------------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+   // write your code here
+   int t;
+   int a,b;
+   int sum;
+   
+   cin>>t;
+   while(t--)
+   {
+       cin>>a;
+       cin>>b;
+       sum = -(-a-b);
+       cout<<sum<<endl;
+   }
+   
+    return 0;
+}
+
+
+
+-------------------------------------------------------------------------------------------------
