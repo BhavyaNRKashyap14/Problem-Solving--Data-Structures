@@ -1,0 +1,74 @@
+Description
+Given N as input, print a series of 2*N numbers, that follows following pattern 1, -2, 4, -6, 7, -10, 10, -14, …
+
+Prohibited Keywords
+No prohibited keywords for this problem.
+Input Format
+Single number N is given.
+
+Output Format
+Print space separated series of N numbers as specified in problem statement.
+
+Constraints
+1 <= N <= 106
+
+Example
+Input 1
+5
+ 
+Output 1
+1 -2 4 -6 7 -10 10 -14 13 -18
+ 
+Explanation 1
+Self Explanatory
+
+------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    
+    int num = n *2;
+    int odd = 1;
+    int even = 0;
+    
+    int i =1;
+    
+    while(num--)
+    {
+       if(i == 1)
+       {
+           cout<<i<<" ";
+           odd = i;
+       }
+       else if(i == 2)
+       {
+           cout<< (-i) <<" ";
+           even = -i;
+       }
+       else if(i%2 != 0)
+       {
+           int val = 3+odd;
+           cout<<val<<" ";
+           odd = val;
+       }
+       else if(i%2 == 0)
+       {
+           int val = even-4;
+           cout<<val<<" ";
+           even = val;
+       }
+       
+       i++;
+    }
+        
+       
+    
+   // write your code here
+    return 0;
+}
+----------------------------------------------------------------------------------
+
