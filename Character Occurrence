@@ -1,0 +1,76 @@
+Description
+Given a string s and a character ch, find the occurrence of ch in s.
+
+Prohibited Keywords
+No prohibited keywords for this problem.
+Input Format
+First line a single integer T: No of Test Cases.
+
+Each test case contains 2 lines:
+
+s: String
+
+ch: character
+
+Output Format
+For each test case output the occurence of the character in the given string.
+
+Constraints
+1 <= T <= 100
+
+0 <= length(s) <= 100
+
+Example
+Input 1
+2
+This is a sample test
+i
+Beingzero
+s
+ 
+Output 1
+2
+0
+ 
+Explanation 1
+Self Explanatory
+
+
+
+-------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    
+    
+    while(t--)
+    {
+        string str;
+        cin.ignore();
+        getline(std::cin, str);
+        
+        char ch;
+        cin>>ch;
+        
+    
+        int count =0;
+        
+        for(int i =0;i<str.size();i++)
+        {
+            if(str[i] == ch)
+            {
+                count++;
+            }
+        }
+        
+        cout<<count<<endl;
+        
+    }
+   // write your code here
+    return 0;
+}
+-------------------------------------------------------------------------------------
