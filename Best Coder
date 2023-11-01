@@ -1,0 +1,61 @@
+Description
+Write the code to print below two lines of output.
+
+
+
+You are required to research about how to print output while you are prohibited to use below methods:
+
+
+
+C++: cout, printf is prohibited.
+C#: Console.Write and Console.WriteLine is prohibited
+JAVA: System.out.printf, System.out.print, System.out.println is prohibited
+PYTHON: print function is prohibited
+NODEJS (Javascript): console.log is prohibited
+Prohibited Keywords
+CPP : printf,cout
+
+JAVA : System.out.print
+
+PYTHON : print
+
+JAVASCRIPT : console.log
+
+C# : Console.Write
+
+Input Format
+No Input is given
+
+Output Format
+Print below two lines of output
+
+I want to be
+
+THE BEST CODER!
+
+Constraints
+Not Applicable
+
+Example
+Input 1
+-
+ 
+Output 1
+I want to be
+THE BEST CODER!
+ 
+Explanation 1
+Self Explanatory
+
+
+-----------------------------------------------------------------------------------
+#include <unistd.h>
+#include<cstring>
+
+int main() {
+    const char* message = "I want to be\nTHE BEST CODER!";
+    size_t length = strlen(message);
+    write(1, message, length);
+    return 0;
+}
+-----------------------------------------------------------------------------------
