@@ -1,0 +1,51 @@
+Description
+Your task is to Calculate A + B. You are not allowed to use PLUS (+) Symbol to add two given numbers.
+
+Prohibited Keywords
+CPP : +
+
+JAVA : +
+
+PYTHON : +
+
+JAVASCRIPT : +
+
+C# : +
+
+Input Format
+Single line of input, containing a pair of integers A and B, separated by a space.
+
+Output Format
+Print A+B as answer
+
+Constraints
+-1000 <= A, B <= 1000
+
+Example
+Input 1
+10 43
+ 
+Output 1
+53
+ 
+Explanation 1
+Self Explanatory
+
+ 
+Note
+-1000 <= A, B <= 1000
+------------------------------------------------------------------------------------
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(){
+   // write your code here
+   int a,b;
+   cin>>a;
+   cin>>b;
+   int sum = -(-a-b);
+   cout<<sum<<endl;
+    return 0;
+}
+----------------------------------------------------------------------------------
