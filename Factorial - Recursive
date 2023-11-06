@@ -1,0 +1,65 @@
+Description
+Factorial of a positive Integer N is calculated as 
+
+N! = 1 * 2 * 3 * 4 .... N
+
+Given a positive integer N, calculate its factorial.
+
+Prohibited Keywords
+CPP : while,for
+
+JAVA : while,for
+
+PYTHON : while,for
+
+JAVASCRIPT : while,for
+
+C# : while,for
+
+Input Format
+Few numbers are given, One Per Line.
+
+Output Format
+For Every Number, Print Its Factorial on a Separate Line.
+
+Constraints
+0 <= N <= 20
+
+Example
+Input 1
+3
+5
+2
+ 
+Output 1
+6
+120
+2
+ 
+Explanation 1
+Self Explanatory
+
+----------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
+using namespace std;
+
+class BeingZero{
+    public:
+    long long factorial(int n)
+    {
+        long long ans = 1;
+        if(n == 0)
+        {
+            return 1;
+        }
+        
+        return n*factorial(n-1);
+        
+        // Just complete given function
+      	// Do not write main or input reading or output printing
+      	// That is already taken care by hidden code
+      	// Just calculate and return the answer value to caller
+    }
+};
+
+------------------------------------------------------------------------------------------------------
